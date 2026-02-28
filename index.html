@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEZ-Recruit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <script src="https://kit.fontawesome.com/714a67ea57.js" crossorigin="anonymous"></script>
+    <script src="Scripts/script.js"></script>
+</head>
+<body>
+    <nav>
+        <section class="nav-left">
+            <img src="pics_&_icons/DEZ_Recruit_Logo_small.png" alt="Dez-recruit logo">
+        </section>
+        <div class="side-con">
+            <ul class="side-nav">
+                <li class="larger" onclick="hide()"><i class="fa-solid fa-x"></i></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Job Listing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a class="find-job" href="#">Find Job</a></li>
+                <li><a class="post-job" href="#">Post Job</a></li>
+            </ul>
+        </div>
+        <section class="nav-right">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Job Listing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a class="find-job" href="#">Find Job</a></li>
+                <li><a class="post-job" href="#">Post Job</a></li>
+            </ul>
+            <i class="fa-solid fa-bars larger" onclick="display()"></i>
+        </section>
+    </nav>
+    <main>
+        <section class="hero-sect">
+            <div class="description">
+                <h1>Find the Right Job Faster</h1>
+                Search thousands of verified opportunities.
+            </div>
+            <div class="search">
+                <div class="search-bar">
+                    <form action="#" method="#">
+                        <input type="text" name="title" id="title" placeholder="Job Title [e.g. Front-End Developer]" required>
+                        <input type="text" name="location" id="location" placeholder="Location [e.g. Lagos, Nigeria]" required>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="filter">
+                    <select name="Job-Type" id="Job Type">
+                        <option value="">Remote</option>
+                        <option value="">Full-Time</option>
+                        <option value="">Part-Time</option>
+                        <option value="">Hybrid</option>
+                        <option value="">On-Site</option>
+                        <option value="">Internship</option>
+                    </select>
+                    <select name="Job-Category" id="Job Category">
+                        <option value="">Web/Software Development</option>
+                        <option value="">Design & Digital Creatives</option>
+                        <option value="">Accounting/Finance</option>
+                        <option value="">Education & Training</option>
+                        <option value="">Other IT Skills</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section class="job-section-container">
+            <div class="jsc-head" id="webdev">
+                <h2>Web Developement</h2>
+            </div>
+            <div class="jsc-body">
+                <div class="jsc-body-item">
+                    <h4>Frontend Development</h4>
+                    <div class="jsc-count">
+                        <span id="jsc-num">123</span>
+                        <span id ="jsc-text">Job-Vacancies</span>
+                    </div>
+                </div>
+                <div class="jsc-body-item">
+                    <h4>Backend Development</h4>
+                    <div class="jsc-count">
+                        <span id="jsc-num">200</span>
+                        <span id ="jsc-text">Job-Vacancies</span>
+                    </div>
+                    
+                </div>
+                <div class="jsc-body-item">
+                    <h4>Full-Stack Development</h4>
+                    <div class="jsc-count">
+                        <span id="jsc-num">500</span>
+                        <span id ="jsc-text">Job-Vacancies</span>
+                    </div>
+                </div>
+            </div>
+            <div class="jsc-head">
+                <h2>Mobile-App Developement</h2>
+            </div>
+            <div class="jsc-body">
+                <div class="jsc-body-item">
+                    <h4>IOS Development</h4>
+                    <div class="jsc-count">
+                        <span id="jsc-num">123</span>
+                        <span id ="jsc-text">Job-Vacancies</span>
+                    </div>
+                </div>
+                <div class="jsc-body-item">
+                    <h4>Android Development</h4>
+                    <div class="jsc-count">
+                        <span id="jsc-num">200</span>
+                        <span id ="jsc-text">Job-Vacancies</span>
+                    </div>
+                </div>
+                <div class="jsc-body-item">
+                    <h4>Cross-Platform Development</h4>
+                    <div class="jsc-count">
+                        <span id="jsc-num">500</span>
+                        <span id ="jsc-text">Job-Vacancies</span>
+                    </div>
+                </div>
+            </div>
+            <div class="jsc-head">
+                <h2>Design</h2>
+            </div>
+            <div class="jsc-body">
+                <div class="jsc-body-item">
+                    <h4>Web Design</h4>
+                    <div class="jsc-count">
+                        <span id="jsc-num">123</span>
+                        <span id ="jsc-text">Job-Vacancies</span>
+                    </div>
+                </div>
+                <div class="jsc-body-item">
+                    <h4>Graphics Design</h4>
+                    <div class="jsc-count">
+                        <span id="jsc-num">200</span>
+                        <span id ="jsc-text">Job-Vacancies</span>
+                    </div>
+                </div>
+                <div class="jsc-body-item">
+                    <h4>UI/UX Design</h4>
+                    <div class="jsc-count">
+                        <span id="jsc-num">500</span>
+                        <span id ="jsc-text">Job-Vacancies</span>
+                    </div>
+                </div>
+            </div>
+            <div class="jsc-head">
+                <h2>Accounting</h2>
+            </div>
+            <div class="jsc-body">
+                <div class="jsc-body-item">
+                    <h4>Accounting</h4>
+                    <div class="jsc-count">
+                        <span id="jsc-num">123</span>
+                        <span id ="jsc-text">Job-Vacancies</span>
+                    </div>
+                </div>
+                <div class="jsc-body-item">
+                    <h4>Finance</h4>
+                    <div class="jsc-count">
+                        <span id="jsc-num">200</span>
+                        <span id ="jsc-text">Job-Vacancies</span>
+                    </div>
+                </div>
+                <div class="jsc-body-item">
+                    <h4>Auditing</h4>
+                    <div class="jsc-count">
+                        <span id="jsc-num">500</span>
+                        <span id ="jsc-text">Job-Vacancies</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <footer>
+        We are going to the market
+    </footer> -->
+    
+</body>
+</html>
