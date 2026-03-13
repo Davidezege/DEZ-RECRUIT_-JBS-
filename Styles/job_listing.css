@@ -1,0 +1,156 @@
+/* General Body Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+aside {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.aside-header h4 {
+    font-size: 20px;
+    color: #002366;
+    margin-bottom: 25px;
+}
+
+aside .flex-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+aside .flex-item {
+    font-size: 16px;
+    color: #50565c;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: color 0.3s ease;
+}
+
+aside .flex-item i {
+    color: var(--accent);
+    transition: transform 0.3s ease;
+}
+
+aside .flex-item:hover {
+    color: var(--accent);
+}
+
+aside .flex-item:hover i {
+    transform: translateX(4px);
+}
+
+/* Main content area */
+main {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    overflow-y: auto;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar form {
+    display: flex;
+    gap: 15px;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d7dde8;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-bar input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.search-bar button {
+    height: 50px;
+    padding: 0 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #002366;
+}
+
+.main-header {
+    font-size: 24px;
+    color: #002366;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Job Listing Container */
+.job-listing-con {
+    display: grid;
+    gap: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .jlc-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .jlc-twenty-con img {
+        width: 100px; /* Adjust size for mobile */
+        margin: 0 auto 15px;
+    }
+
+    .jlc-comp-addr {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .jlc-twenty-con:last-child {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

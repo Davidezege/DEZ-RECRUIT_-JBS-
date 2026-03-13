@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEZ-Recruit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/nav.css">
+    <link rel="stylesheet" href="Styles/blog.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <script src="https://kit.fontawesome.com/714a67ea57.js" crossorigin="anonymous"></script>
+    <script src="Scripts/script.js"></script>
+</head>
+<body>
+    <nav>
+        <section class="nav-left">
+            <img src="pics_&_icons/DEZ_Recruit_Logo_small.png" alt="Dez-recruit logo">
+        </section>
+        <div class="side-con">
+            <ul class="side-nav">
+                <li class="larger" onclick="hide()"><i class="fa-solid fa-x"></i></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="job_listing.html">Job Listing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="find-job" href="#">Find Job</a></li>
+                <li><a class="post-job" href="#">Post Job</a></li>
+            </ul>
+        </div>
+        <section class="nav-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="job_listing.html">Job Listing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="find-job" href="#">Find Job</a></li>
+                <li><a class="post-job" href="#">Post Job</a></li>
+            </ul>
+            <i class="fa-solid fa-bars larger" onclick="display()"></i>
+        </section>
+    </nav>
+    <main>
+        <section class="top-picks">
+            <div class="tp-head">
+                <h1>TOP PICKS</h1>
+            </div>
+            <div class="tp-body">
+                <div class="tp-body-item">
+                    <div class="tp-card">
+                        <div class="header-img">
+                            <img src="pics_&_icons/v37-wit-42-job129.jpg" alt="Blog Post Image">
+                        </div>
+                        <div class="body-description">
+                            <h3>Mastering the Art of the Video Interview</h3>
+                            <p>In today's remote-first world, video interviews are more common than ever. Learn how to present your best self and impress hiring managers through the screen.</p>
+                            <a href="#" class="read-more-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-body-item">
+                    <div class="tp-card">
+                        <div class="header-img">
+                            <img src="pics_&_icons/about-me-article-img.png" alt="Blog Post Image">
+                        </div>
+                        <div class="body-description">
+                            <h3>How to Negotiate Your Salary Like a Pro</h3>
+                            <p>Don't leave money on the table. This guide will walk you through the essential steps of salary negotiation, from research to the final offer.</p>
+                            <a href="#" class="read-more-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-body-item">
+                    <div class="tp-card">
+                        <div class="header-img">
+                            <img src="pics_&_icons/cocacola logo.avif" alt="Blog Post Image">
+                        </div>
+                        <div class="body-description">
+                            <h3>The Top 10 In-Demand Skills for 2024</h3>
+                            <p>Stay ahead of the curve by developing the skills that employers are looking for most. Find out which abilities will make your resume stand out.</p>
+                            <a href="#" class="read-more-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-column" id="footer-dez-recruit">
+                    <div class="footer-logo">
+                        <img src="pics_&_icons/DEZ_Recruit_Logo_small.png" alt="DEZ-Recruit Logo">
+                    </div>
+                    <p>Smarter Job Searching, Faster Hiring.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="job_listing.html">Job Listing</a></li>
+                        <li><a href="#">Find Job</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>For Employers</h3>
+                    <ul>
+                        <li><a href="#">Post Job</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Get in Touch</h3>
+                    <address>
+                        <p><i class="fas fa-phone"></i> +234-91-3522-6872</p>
+                        <p><i class="fas fa-envelope"></i> ezerichio@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DEZ-RECRUIT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>

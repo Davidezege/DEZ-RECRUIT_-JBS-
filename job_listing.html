@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEZ-Recruit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/nav.css">
+    <link rel="stylesheet" href="Styles/job_listing.css">
+    <link rel="stylesheet" href="Styles/job-item-card.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <script src="https://kit.fontawesome.com/714a67ea57.js" crossorigin="anonymous"></script>
+    <script src="Scripts/script.js"></script>
+</head>
+<body>
+    <nav>
+        <section class="nav-left">
+            <img src="pics_&_icons/DEZ_Recruit_Logo_small.png" alt="Dez-recruit logo">
+        </section>
+        <div class="side-con">
+            <ul class="side-nav">
+                <li class="larger" onclick="hide()"><i class="fa-solid fa-x"></i></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="job_listing.html">Job Listing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="find-job" href="#">Find Job</a></li>
+                <li><a class="post-job" href="#">Post Job</a></li>
+            </ul>
+        </div>
+        <section class="nav-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="job_listing.html">Job Listing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="find-job" href="#">Find Job</a></li>
+                <li><a class="post-job" href="#">Post Job</a></li>
+            </ul>
+            <i class="fa-solid fa-bars larger" onclick="display()"></i>
+        </section>
+    </nav>
+    <div class="grid-container">
+        <aside>
+            <section class="aside-header">
+                <h4>Search by:</h4>
+            </section>
+            <section>
+                <ul class="flex-container">
+                    <li class="flex-item">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Keyword
+                    </li>
+                    <li class="flex-item">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Location
+                    </li>
+                    <li class="flex-item">
+                        <i class="fa-solid fa-arrow-right"></i>Job Type
+                    </li>
+                    <li class="flex-item">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Salary Range
+                    </li>
+                    <li class="flex-item">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Experience
+                    </li>
+                    <li class="flex-item">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Remote Toggle
+                    </li>
+                    <li class="flex-item">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Date Posted
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <main>
+            <div class="search-bar">
+                <form action="#" method="#">
+                    <input type="text" name="title" id="title" placeholder="Job Title [e.g. Front-End Developer]" required>
+                    <input type="text" name="location" id="location" placeholder="Location [e.g. Lagos, Nigeria]" required>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <section class="job-listing-con">
+                <div class="jlc-item">
+                    <div class="jlc-twenty-con">
+                        <img src="pics_&_icons/cocacola logo.avif" alt="Company_Logo">
+                    </div>
+                    <div class="jlc-auto-con">
+                        <div id="jlc-job-title">
+                            <span class="category">Full-Time</span>
+                            <span class="title"><span class="ash-color">Job Title:</span> Frontend Developer</span>
+                        </div>
+                        <div class="jlc-comp-addr">
+                            <div class="jlc-comp">
+                                <span class="ash-color">Company:</span>
+                                <span>Cocacola Bottling Company</span>
+                            </div>
+                            <div class="jlc-addr">
+                                <span class="ash-color">Location:</span>
+                                <span>Lagos, Nigeria</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jlc-twenty-con">
+                        <b>Apply</b> <br><br>
+                        <b>Save</b>
+                    </div>
+                </div>
+                <div class="jlc-item">
+                    <div class="jlc-twenty-con">
+                        <img src="pics_&_icons/Microsoft logo.png" alt="Company_Logo">
+                    </div>
+                    <div class="jlc-auto-con">
+                        <div id="jlc-job-title">
+                            <span class="category">Remote</span>
+                            <span class="title"><span class="ash-color">Job Title:</span> UI/UX Designer</span>
+                        </div>
+                        <div class="jlc-comp-addr">
+                            <div class="jlc-comp">
+                                <span class="ash-color">Company:</span>
+                                <span>Microsoft</span>
+                            </div>
+                            <div class="jlc-addr">
+                                <span class="ash-color">Location:</span>
+                                <span>Redmond, Washington</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jlc-twenty-con">
+                        <b>Apply</b> <br><br>
+                        <b>Save</b>
+                    </div>
+                </div>
+                <div class="jlc-item">
+                    <div class="jlc-twenty-con">
+                        <img src="pics_&_icons/download.png" alt="Company_Logo">
+                    </div>
+                    <div class="jlc-auto-con">
+                        <div id="jlc-job-title">
+                            <span class="category">Part-Time</span>
+                            <span class="title"><span class="ash-color">Job Title:</span> Data Analyst</span>
+                        </div>
+                        <div class="jlc-comp-addr">
+                            <div class="jlc-comp">
+                                <span class="ash-color">Company:</span>
+                                <span>Innovate Solutions</span>
+                            </div>
+                            <div class="jlc-addr">
+                                <span class="ash-color">Location:</span>
+                                <span>Abuja, Nigeria</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jlc-twenty-con">
+                        <b>Apply</b> <br><br>
+                        <b>Save</b>
+                    </div>
+                </div>
+                <div class="jlc-item">
+                    <div class="jlc-twenty-con">
+                        <img src="pics_&_icons/DEZ_Recruit_Logo.png" alt="Company_Logo">
+                    </div>
+                    <div class="jlc-auto-con">
+                        <div id="jlc-job-title">
+                            <span class="category">Full-Time</span>
+                            <span class="title"><span class="ash-color">Job Title:</span> Backend Engineer</span>
+                        </div>
+                        <div class="jlc-comp-addr">
+                            <div class="jlc-comp">
+                                <span class="ash-color">Company:</span>
+                                <span>DEZ-Recruit</span>
+                            </div>
+                            <div class="jlc-addr">
+                                <span class="ash-color">Location:</span>
+                                <span>Lagos, Nigeria</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jlc-twenty-con">
+                        <b>Apply</b> <br><br>
+                        <b>Save</b>
+                    </div>
+                </div>
+                <div class="jlc-item">
+                    <div class="jlc-twenty-con">
+                        <img src="pics_&_icons/DEZ_Recruit_Logo_small.png" alt="Company_Logo">
+                    </div>
+                    <div class="jlc-auto-con">
+                        <div id="jlc-job-title">
+                            <span class="category">Internship</span>
+                            <span class="title"><span class="ash-color">Job Title:</span> Software Engineer Intern</span>
+                        </div>
+                        <div class="jlc-comp-addr">
+                            <div class="jlc-comp">
+                                <span class="ash-color">Company:</span>
+                                <span>Spella-Hub</span>
+                            </div>
+                            <div class="jlc-addr">
+                                <span class="ash-color">Location:</span>
+                                <span>Remote</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jlc-twenty-con">
+                        <b>Apply</b> <br><br>
+                        <b>Save</b>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-column" id="footer-dez-recruit">
+                    <div class="footer-logo">
+                        <img src="pics_&_icons/DEZ_Recruit_Logo_small.png" alt="DEZ-Recruit Logo">
+                    </div>
+                    <p>Smarter Job Searching, Faster Hiring.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="job_listing.html">Job Listing</a></li>
+                        <li><a href="#">Find Job</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>For Employers</h3>
+                    <ul>
+                        <li><a href="#">Post Job</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Get in Touch</h3>
+                    <address>
+                        <p><i class="fas fa-phone"></i> +234-91-3522-6872</p>
+                        <p><i class="fas fa-envelope"></i> ezerichio@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DEZ-RECRUIT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>

@@ -1,0 +1,436 @@
+main {
+    margin: 0 0vw;
+}
+.hero-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+    background: url(/pics_&_icons/v37-wit-42-job129.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    margin: 5vh auto;
+    border-radius: 20px;
+}
+.description {
+    /* background-color: whitesmoke; */
+    font-size: clamp(1rem, larger, x-large);
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    border-bottom: 2px solid rgb(245, 245, 245);
+}
+.description h1{
+    color: #002366;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+}
+.job-stats {
+    width: 60%;
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
+}
+.js-item {
+    display: flex;
+}
+.jsi-text {
+    align-content: center;
+}
+.jsi-icon {
+    color: #002366;
+    font-size: 3rem;
+}
+.search {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #7a7a7a;
+    margin: 8vh 5vw;
+    box-sizing: border-box;
+    width: 95%;
+}
+
+.search-bar form, .filter {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.9rem 1rem;
+}
+
+.search input, .filter select {
+    width: 100%;
+    min-width: 10vw;
+    height: 5vh;
+    border: 1px solid #d7dde8;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 0 0.8rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search input:focus, .filter select:hover {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.search button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    min-height: 42px;
+    padding: 0 1.1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: clamp(0.7rem, 1vw, 1rem);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--text-secondary);
+    background: var(--accent);
+    box-shadow: 0 10px 18px rgba(37, 99, 235, 0.22);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+}
+
+.search button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 24px rgba(37, 99, 235, 0.26);
+    filter: brightness(1.03);
+}
+
+.search button:active {
+    transform: translateY(0);
+    box-shadow: 0 8px 14px rgba(37, 99, 235, 0.2);
+}
+
+.search button:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.25);
+    outline-offset: 2px;
+}
+
+/* 
+        ARTICLE SECTION
+*/
+article.about-dez {
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+article.about-dez > div.article-header {
+    color: #022366;
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+    font-weight: bolder;
+}
+.article-content {
+    gap: 2vh;
+    display: grid;
+    line-height: 1.5;
+    color: #445;
+    width: 90%;
+    margin: auto;
+    font-weight: 500;
+}
+.article-image {
+    width: 90%;
+    margin: 2rem auto;
+}
+.article-image img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #bbb;
+    border-radius: 20px;
+}
+.blog-advert {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 20px;
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    top: -150px;
+    left: 0;
+    overflow: auto;
+    box-shadow: 2px 2px 5px #7a7a7a;
+}
+.blog-advert {
+    color: #556;
+}
+.blog-gap {
+    margin: 1rem 0;
+}
+.blog-advert-button {
+    width: 10%;
+    min-width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--accent);
+    padding: 20px;
+    border-radius: 10px;
+}
+.blog-advert-button > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width:750px) {
+    .blog-advert {
+        position: static;
+    }
+    .jsi-icon {
+        font-size: 1.5rem;
+    }
+    .jsi-text .bottom {
+        font-size: smaller;
+    }
+    .js-item {
+        flex-direction: column;
+    }
+}
+
+.job-section-comps {
+    background-color: whitesmoke;
+    display: flex;
+    flex: 1 1 auto;
+    padding: 2rem;
+    gap: 20px;
+}
+
+
+.job-section-container {
+    width: 75%;
+}
+.top-companies {
+    border-left: 2px solid #bbb;
+    padding: 2rem 20px;
+    height: 1000px;
+    overflow: auto;
+}
+
+.jsc-header {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    color: #022366;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.jsc-head {
+    color: #002366;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    border-top: 2px solid rgb(200, 200, 200);
+}
+#webdev {
+    margin: 0 0 1.5rem 0;
+}
+.jsc-body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.jsc-body-item {
+    background-color: whitesmoke;
+    border-radius: 8px;
+    border: 2px solid rgb(108, 108, 255);
+    box-shadow: 3px 3px 3px #7a7a7a;
+    width: 30%;
+    text-align: center;
+    padding: 0.5rem 0;
+    transition: background-color 0.3s, scale 0.3s;
+}
+.jsc-body-item:hover {
+    background-color: rgb(200, 200, 200);
+    cursor: pointer;
+    scale: 1.02;
+}
+h4 {
+    color: #50565c;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    /* text-align: center; */
+    transition: color 0.3s;
+}
+.jsc-body-item:hover h4 {
+    color: black;
+}
+.jsc-body-item:active {
+    scale: 0.95;
+}
+.jsc-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    color: #022446;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    opacity: 0;
+    transition: transform 0.4s, opacity 0.4s;
+}
+.jsc-body-item:hover .arrow {
+    display: inline;
+    opacity: 1;
+    transform: translateX(20px);
+}
+#jsc-text {
+    margin-left: 1rem;
+}
+#jsc-num {
+    background-color: wheat;
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+@media (max-width:950px) {
+    .jsc-body {
+        flex-direction: column;
+        align-items: center;
+    }
+    .jsc-body-item {
+        width: 100%;
+        margin: 1rem;
+    }
+}
+.tc-card {
+    background-color: whitesmoke;
+    border: 2px solid rgb(108, 108, 255);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #7a7a7a;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+.tc-card > .header-img {
+    width: 100%;
+    margin: auto;
+    border: 2px solid #bbb;
+    border-radius: 8px;
+}
+.tc-card > .header-img > img {
+    width: 100%;
+    margin: auto;
+    border-radius: 8px;
+}
+
+@media (max-width:950px) {
+    .job-section-comps {
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+    .job-section-container {
+        width: 100%;
+        margin: auto;
+    }
+    .top-companies {
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        border: none;
+    }
+    .tc-body {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        gap: 10px;
+    }
+}
+@media (max-width:600px) {
+    .tc-body {
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
+}
+/* JOB LIS CONTAINER */
+.job-listing-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.jl-header {
+    text-align: center;
+    margin: 1rem 0;
+    color: #022366;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/* HOW IT WORKS SECTION */
+
+.how-it-works{
+    padding:80px 20px;
+    background-color: whitesmoke;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-header h2{
+    font-size:32px;
+    color:#002366;
+    margin-bottom:10px;
+}
+
+.section-header p{
+    color:#50565c;
+    font-size:16px;
+}
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.step-card{
+    background:#ffffff;
+    padding:35px 25px;
+    border-radius:12px;
+    text-align:center;
+    border:1px solid #d9e2ec;
+    box-shadow:0 10px 24px rgba(15,23,42,0.08);
+    transition:all 0.3s ease;
+}
+
+.step-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 16px 30px rgba(15,23,42,0.12);
+    border-color:#b7c8ff;
+}
+
+.step-icon{
+    font-size:40px;
+    margin-bottom:20px;
+    filter:saturate(1.1);
+    color: var(--accent);
+}
+
+.step-card h3{
+    font-size:20px;
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.step-card p{
+    font-size:15px;
+    color:#50565c;
+    line-height:1.6;
+}

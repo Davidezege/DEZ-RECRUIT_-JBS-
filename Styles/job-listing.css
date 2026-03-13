@@ -1,0 +1,41 @@
+body {
+    box-sizing: border-box;
+    display: grid;
+
+}
+aside {
+    background-color: #eee;
+    position: sticky;
+    top: 60px;
+    height: calc(100dvh - 60px);
+    box-sizing: border-box;
+    padding: 1rem;
+}
+aside > .aside-header {
+    color: #555;
+}
+aside > section > ul {
+    list-style-type: none;
+}
+aside > section > ul > li {
+    margin: 1rem 0;
+    font-weight: 600;
+    display: flex;
+    gap: 1rem;
+}
+.grid-container {
+    display: grid;
+    position: sticky;
+    top: 60px;
+    grid-template-columns: 20% 1fr;
+}
+main {
+    background-color: wheat;
+    width: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+footer {
+    grid-column: 2 / span 1;
+    height: 100px;
+}

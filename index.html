@@ -7,10 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/714a67ea57.js" crossorigin="anonymous" defer></script>
+    <script src="Scripts/script.js" defer></script>
     <link rel="stylesheet" href="Styles/style.css">
-    <link rel="stylesheet" href="Styles/main.css">
-    <script src="https://kit.fontawesome.com/714a67ea57.js" crossorigin="anonymous"></script>
-    <script src="Scripts/script.js"></script>
+    <link rel="stylesheet" href="Styles/nav.css">
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/job-item-card.css">
+    <link rel="stylesheet" href="Styles/footer.css">
 </head>
 <body>
     <nav>
@@ -20,18 +23,18 @@
         <div class="side-con">
             <ul class="side-nav">
                 <li class="larger" onclick="hide()"><i class="fa-solid fa-x"></i></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="https://www.w3schools.com/html/html_elements.asp">Job Listing</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="job_listing.html">Job Listing</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a class="find-job" href="#">Find Job</a></li>
                 <li><a class="post-job" href="#">Post Job</a></li>
             </ul>
         </div>
         <section class="nav-right">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="https://www.w3schools.com/html/html_elements.asp">Job Listing</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="job_listing.html">Job Listing</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a class="find-job" href="#">Find Job</a></li>
                 <li><a class="post-job" href="#">Post Job</a></li>
             </ul>
@@ -43,6 +46,22 @@
             <div class="description">
                 <h1>Find the Right Job Faster</h1>
                 Search thousands of verified opportunities.
+                <div class="job-stats">
+                    <div class="js-item">
+                        <div class="jsi-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="jsi-text">
+                            <span class="top"></span>
+                            <span class="bottom">Jobs Available</span>
+                        </div>
+                    </div>
+                    <div class="js-item">
+                        <div class="jsi-icon"><i class="fa-solid fa-user"></i></div>
+                        <div class="jsi-text">
+                            <span class="top"></span>
+                            <span class="bottom">Companies</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="search">
                 <div class="search-bar">
@@ -71,149 +90,282 @@
                 </div>
             </div>
         </section>
-        <section class="job-section-container">
-            <div class="jsc-head" id="webdev">
-                <h2>Web Developement</h2>
+        <article class="about-dez">
+            <div class="article-header">
+                <h1>DEZ-RECRUIT: Smarter Job Search, Faster Hiring</h1>
             </div>
-            <div class="jsc-body">
-                <div class="jsc-body-item">
-                    <h4>Frontend Development</h4>
-                    <div class="jsc-count">
-                        <span id="jsc-num">123</span>
-                        <span id ="jsc-text">Job-Vacancies</span>
-                        <span class="arrow">
-                            >
-                        </span>
-                    </div>
-                </div>
-                <div class="jsc-body-item">
-                    <h4>Backend Development</h4>
-                    <div class="jsc-count">
-                        <span id="jsc-num">200</span>
-                        <span id ="jsc-text">Job-Vacancies</span>
-                        <span class="arrow">
-                            >
-                        </span>
-                    </div>
-                </div>
-                <div class="jsc-body-item">
-                    <h4>Full-Stack Development</h4>
-                    <div class="jsc-count">
-                        <span id="jsc-num">500</span>
-                        <span id ="jsc-text">Job-Vacancies</span>
-                        <span class="arrow">
-                            >
-                        </span>                        
-                    </div>
-                </div>
+            <div class="article-content">
+                <p>DEZ-RECRUIT is a modern job board platform designed to make job searching simple and efficient. It provides powerful search and filtering tools that help candidates quickly find jobs that match their skills, interests, and preferred locations.</p>
+                <p>The platform also allows employers to easily post job openings and connect with qualified candidates through a clean and organized system. With its intuitive design, fast navigation, and clear job listings, DEZ-RECRUIT reduces the time and effort required in the hiring process.</p>
+                <p>By combining easy job discovery, streamlined applications, and helpful career insights through its blog section, DEZ-RECRUIT offers a smarter and more user-focused experience than many traditional job board platforms.</p>
             </div>
-            <div class="jsc-head">
-                <h2>Mobile-App Developement</h2>
+            <div class="article-image">
+                <img src="pics_&_icons/about-me-article-img.png" alt="DEZ-RECRUIT-WORKERS">
             </div>
-            <div class="jsc-body">
-                <div class="jsc-body-item">
-                    <h4>IOS Development</h4>
-                    <div class="jsc-count">
-                        <span id="jsc-num">123</span>
-                        <span id ="jsc-text">Job-Vacancies</span>
-                        <span class="arrow">
-                            >
-                        </span>
+            <section class="blog-advert">
+                <div class="blog-advert-header blog-gap">
+                    <h3>Get the Latest Findings in the Job Market</h3>
+                </div>
+                <div class="blog-advert-body">
+                    DEZ-RECRUIT goes beyond traditional job boards. Our goal is to deliver strategic solutions on hard-to-fill roles.
+                    Visit our Blog page to find insights and explore more of Job Market trends.
+                    <div class="blog-advert-button blog-gap">
+                        <a href="blog.html">
+                            Blog
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="jsc-body-item">
-                    <h4>Android Development</h4>
-                    <div class="jsc-count">
-                        <span id="jsc-num">200</span>
-                        <span id ="jsc-text">Job-Vacancies</span>
-                        <span class="arrow">
-                            >
-                        </span>
+                </div>
+            </section>
+        </article>
+        <section class="job-section-comps">
+            <section class="job-section-container">
+                <div class="jsc-header">
+                    <h2>Job Categories</h2>
+                </div>
+                <div class="jsc-head" id="webdev">
+                    <h2>Web Developement</h2>
+                </div>
+                <div class="jsc-body">
+                    <div class="jsc-body-item">
+                        <h4>Frontend Development</h4>
+                        <div class="jsc-count">
+                            <span id="jsc-num">123</span>
+                            <span id ="jsc-text">Job-Vacancies</span>
+                            <span class="arrow">
+                                >
+                            </span>
+                        </div>
+                    </div>
+                    <div class="jsc-body-item">
+                        <h4>Backend Development</h4>
+                        <div class="jsc-count">
+                            <span id="jsc-num">200</span>
+                            <span id ="jsc-text">Job-Vacancies</span>
+                            <span class="arrow">
+                                >
+                            </span>
+                        </div>
+                    </div>
+                    <div class="jsc-body-item">
+                        <h4>Full-Stack Development</h4>
+                        <div class="jsc-count">
+                            <span id="jsc-num">500</span>
+                            <span id ="jsc-text">Job-Vacancies</span>
+                            <span class="arrow">
+                                >
+                            </span>                        
+                        </div>
                     </div>
                 </div>
-                <div class="jsc-body-item">
-                    <h4>Cross-Platform Development</h4>
-                    <div class="jsc-count">
-                        <span id="jsc-num">500</span>
-                        <span id ="jsc-text">Job-Vacancies</span>
-                        <span class="arrow">
-                            >
-                        </span>
+                <div class="jsc-head">
+                    <h2>Mobile-App Developement</h2>
+                </div>
+                <div class="jsc-body">
+                    <div class="jsc-body-item">
+                        <h4>IOS Development</h4>
+                        <div class="jsc-count">
+                            <span id="jsc-num">123</span>
+                            <span id ="jsc-text">Job-Vacancies</span>
+                            <span class="arrow">
+                                >
+                            </span>
+                        </div>
+                    </div>
+                    <div class="jsc-body-item">
+                        <h4>Android Development</h4>
+                        <div class="jsc-count">
+                            <span id="jsc-num">200</span>
+                            <span id ="jsc-text">Job-Vacancies</span>
+                            <span class="arrow">
+                                >
+                            </span>
+                        </div>
+                    </div>
+                    <div class="jsc-body-item">
+                        <h4>Cross-Platform Development</h4>
+                        <div class="jsc-count">
+                            <span id="jsc-num">500</span>
+                            <span id ="jsc-text">Job-Vacancies</span>
+                            <span class="arrow">
+                                >
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="jsc-head">
-                <h2>Design</h2>
-            </div>
-            <div class="jsc-body">
-                <div class="jsc-body-item">
-                    <h4>Web Design</h4>
-                    <div class="jsc-count">
-                        <span id="jsc-num">123</span>
-                        <span id ="jsc-text">Job-Vacancies</span>
-                        <span class="arrow">
-                            >
-                        </span>
+                <div class="jsc-head">
+                    <h2>Design</h2>
+                </div>
+                <div class="jsc-body">
+                    <div class="jsc-body-item">
+                        <h4>Web Design</h4>
+                        <div class="jsc-count">
+                            <span id="jsc-num">123</span>
+                            <span id ="jsc-text">Job-Vacancies</span>
+                            <span class="arrow">
+                                >
+                            </span>
+                        </div>
+                    </div>
+                    <div class="jsc-body-item">
+                        <h4>Graphics Design</h4>
+                        <div class="jsc-count">
+                            <span id="jsc-num">200</span>
+                            <span id ="jsc-text">Job-Vacancies</span>
+                            <span class="arrow">
+                                >
+                            </span>
+                        </div>
+                    </div>
+                    <div class="jsc-body-item">
+                        <h4>UI/UX Design</h4>
+                        <div class="jsc-count">
+                            <span id="jsc-num">500</span>
+                            <span id ="jsc-text">Job-Vacancies</span>
+                            <span class="arrow">
+                                >
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="jsc-body-item">
-                    <h4>Graphics Design</h4>
-                    <div class="jsc-count">
-                        <span id="jsc-num">200</span>
-                        <span id ="jsc-text">Job-Vacancies</span>
-                        <span class="arrow">
-                            >
-                        </span>
+                <div class="jsc-head">
+                    <h2>Accounting</h2>
+                </div>
+                <div class="jsc-body">
+                    <div class="jsc-body-item">
+                        <h4>Accounting</h4>
+                        <div class="jsc-count">
+                            <span id="jsc-num">123</span>
+                            <span id ="jsc-text">Job-Vacancies</span>
+                            <span class="arrow">
+                                >
+                            </span>
+                        </div>
+                    </div>
+                    <div class="jsc-body-item">
+                        <h4>Finance</h4>
+                        <div class="jsc-count">
+                            <span id="jsc-num">200</span>
+                            <span id ="jsc-text">Job-Vacancies</span>
+                            <span class="arrow">
+                                >
+                            </span>
+                        </div>
+                    </div>
+                    <div class="jsc-body-item">
+                        <h4>Auditing</h4>
+                        <div class="jsc-count">
+                            <span id="jsc-num">500</span>
+                            <span id ="jsc-text">Job-Vacancies</span>
+                            <span class="arrow">
+                                >
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="jsc-body-item">
-                    <h4>UI/UX Design</h4>
-                    <div class="jsc-count">
-                        <span id="jsc-num">500</span>
-                        <span id ="jsc-text">Job-Vacancies</span>
-                        <span class="arrow">
-                            >
-                        </span>
+            </section>
+            <section class="top-companies">
+                <h2>Top Companies</h2>
+                <div class="tc-body">
+                    <div class="tc-card">
+                        <div class="header-img">
+                            <img src="pics_&_icons/download.png" alt="">
+                        </div>
+                        <div class="body-description">
+                            <div class="jsc-count">
+                                <span id="jsc-num">400</span>
+                                <span id ="jsc-text">Job-Vacancies</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tc-card">
+                        <div class="header-img">
+                            <img src="pics_&_icons/download.png" alt="">
+                        </div>
+                        <div class="body-description">
+                            <div class="jsc-count">
+                                <span id="jsc-num">400</span>
+                                <span id ="jsc-text">Job-Vacancies</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tc-card">
+                        <div class="header-img">
+                            <img src="pics_&_icons/download.png" alt="">
+                        </div>
+                        <div class="body-description">
+                            <div class="jsc-count">
+                                <span id="jsc-num">400</span>
+                                <span id ="jsc-text">Job-Vacancies</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tc-card">
+                        <div class="header-img">
+                            <img src="pics_&_icons/download.png" alt="">
+                        </div>
+                        <div class="body-description">
+                            <div class="jsc-count">
+                                <span id="jsc-num">400</span>
+                                <span id ="jsc-text">Job-Vacancies</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tc-card">
+                        <div class="header-img">
+                            <img src="pics_&_icons/download.png" alt="">
+                        </div>
+                        <div class="body-description">
+                            <div class="jsc-count">
+                                <span id="jsc-num">400</span>
+                                <span id ="jsc-text">Job-Vacancies</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tc-card">
+                        <div class="header-img">
+                            <img src="pics_&_icons/download.png" alt="">
+                        </div>
+                        <div class="body-description">
+                            <div class="jsc-count">
+                                <span id="jsc-num">400</span>
+                                <span id ="jsc-text">Job-Vacancies</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="jsc-head">
-                <h2>Accounting</h2>
-            </div>
-            <div class="jsc-body">
-                <div class="jsc-body-item">
-                    <h4>Accounting</h4>
-                    <div class="jsc-count">
-                        <span id="jsc-num">123</span>
-                        <span id ="jsc-text">Job-Vacancies</span>
-                        <span class="arrow">
-                            >
-                        </span>
-                    </div>
-                </div>
-                <div class="jsc-body-item">
-                    <h4>Finance</h4>
-                    <div class="jsc-count">
-                        <span id="jsc-num">200</span>
-                        <span id ="jsc-text">Job-Vacancies</span>
-                        <span class="arrow">
-                            >
-                        </span>
-                    </div>
-                </div>
-                <div class="jsc-body-item">
-                    <h4>Auditing</h4>
-                    <div class="jsc-count">
-                        <span id="jsc-num">500</span>
-                        <span id ="jsc-text">Job-Vacancies</span>
-                        <span class="arrow">
-                            >
-                        </span>
-                    </div>
-                </div>
-            </div>
+            </section>
         </section>
         <section class="job-listing-con">
+            <div class="jl-header">
+                <h1>Featured Jobs</h1>
+            </div>
+            <div class="jlc-item">
+                <div class="jlc-twenty-con">
+                    <img src="pics_&_icons/cocacola logo.avif" alt="Company_Logo">
+                </div>
+                <div class="jlc-auto-con">
+                    <div id="jlc-job-title">
+                        <span class="category">FullTime</span>
+                        <span class="title"><span class="ash-color">Job Title:</span> Frontend Developer</span>
+                    </div>
+                    <div class="jlc-comp-addr">
+                        <div class="jlc-comp">
+                            <span class="ash-color">Company:</span>
+                            <span>Cocacola Bottling Company</span>
+                        </div>
+                        <div class="jlc-addr">
+                            <span class="ash-color">Location:</span>
+                            <span>Lagos, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="jlc-twenty-con">
+                    <b>Apply</b> <br><br>
+                    <b>Save</b>
+                </div>
+            </div>
             <div class="jlc-item">
                 <div class="jlc-twenty-con">
                     <img src="#" alt="Company_Logo">
@@ -239,6 +391,82 @@
                     <b>Save</b>
                 </div>
             </div>
+            <div class="jlc-item">
+                <div class="jlc-twenty-con">
+                    <img src="#" alt="Company_Logo">
+                </div>
+                <div class="jlc-auto-con">
+                    <div id="jlc-job-title">
+                        <span class="category">FullTime</span>
+                        <span class="title"><span class="ash-color">Job Title:</span> Frontend Developer</span>
+                    </div>
+                    <div class="jlc-comp-addr">
+                        <div class="jlc-comp">
+                            <span class="ash-color">Company:</span>
+                            <span>Cocacola Bottling Company</span>
+                        </div>
+                        <div class="jlc-addr">
+                            <span class="ash-color">Location:</span>
+                            <span>Lagos, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="jlc-twenty-con">
+                    <b>Apply</b> <br><br>
+                    <b>Save</b>
+                </div>
+            </div>
+            <div class="jlc-item">
+                <div class="jlc-twenty-con">
+                    <img src="#" alt="Company_Logo">
+                </div>
+                <div class="jlc-auto-con">
+                    <div id="jlc-job-title">
+                        <span class="category">FullTime</span>
+                        <span class="title"><span class="ash-color">Job Title:</span> Frontend Developer</span>
+                    </div>
+                    <div class="jlc-comp-addr">
+                        <div class="jlc-comp">
+                            <span class="ash-color">Company:</span>
+                            <span>Cocacola Bottling Company</span>
+                        </div>
+                        <div class="jlc-addr">
+                            <span class="ash-color">Location:</span>
+                            <span>Lagos, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="jlc-twenty-con">
+                    <b>Apply</b> <br><br>
+                    <b>Save</b>
+                </div>
+            </div>
+            <div class="jlc-item">
+                <div class="jlc-twenty-con">
+                    <img src="#" alt="Company_Logo">
+                </div>
+                <div class="jlc-auto-con">
+                    <div id="jlc-job-title">
+                        <span class="category">FullTime</span>
+                        <span class="title"><span class="ash-color">Job Title:</span> Frontend Developer</span>
+                    </div>
+                    <div class="jlc-comp-addr">
+                        <div class="jlc-comp">
+                            <span class="ash-color">Company:</span>
+                            <span>Cocacola Bottling Company</span>
+                        </div>
+                        <div class="jlc-addr">
+                            <span class="ash-color">Location:</span>
+                            <span>Lagos, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="jlc-twenty-con">
+                    <b>Apply</b> <br><br>
+                    <b>Save</b>
+                </div>
+            </div>
+
         </section>
         <section class="how-it-works">
             <div class="container">
@@ -277,9 +505,54 @@
             </div>
         </section>
     </main>
-    <!-- <footer>
-        We are going to the market
-    </footer> -->
-    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-column" id="footer-dez-recruit">
+                    <div class="footer-logo">
+                        <img src="pics_&_icons/DEZ_Recruit_Logo_small.png" alt="DEZ-Recruit Logo">
+                    </div>
+                    <p>Smarter Job Searching, Faster Hiring.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="job_listing.html">Job Listing</a></li>
+                        <li><a href="#">Find Job</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>For Employers</h3>
+                    <ul>
+                        <li><a href="#">Post Job</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Get in Touch</h3>
+                    <address>
+                        <p><i class="fas fa-phone"></i> +234-91-3522-6872</p>
+                        <p><i class="fas fa-envelope"></i> ezerichio@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DEZ-RECRUIT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
