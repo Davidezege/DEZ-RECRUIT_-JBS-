@@ -20,6 +20,8 @@ aside {
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.05);
     height: fit-content;
+    position: sticky;
+    top: 100px;
 }
 
 .aside-header h4 {
@@ -122,6 +124,10 @@ main {
 .job-listing-con {
     display: grid;
     gap: 20px;
+}
+
+footer {
+    grid-column: 2 / span 1;
 }
 
 /* Responsive design */

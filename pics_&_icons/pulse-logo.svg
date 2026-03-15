@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="160" viewBox="0 0 420 160" role="img" aria-label="Pulse Works">
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="420" height="160" rx="24" fill="#170b0b"/>
+  <path d="M40 92h34l10-26 14 52 14-36 10 10h52" fill="none" stroke="url(#pg)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="76" cy="80" r="7" fill="#fb7185"/>
+  <text x="160" y="90" fill="#fff7ed" font-family="Google Sans, Roboto, Arial, sans-serif" font-size="40" font-weight="800">Pulse</text>
+  <text x="160" y="118" fill="#fdba74" font-family="Google Sans, Roboto, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="2">WORKS</text>
+</svg>

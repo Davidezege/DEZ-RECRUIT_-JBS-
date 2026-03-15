@@ -209,10 +209,22 @@ article.about-dez > div.article-header {
     width: 75%;
 }
 .top-companies {
-    border-left: 2px solid #bbb;
+    border-left: 1px solid #ddd;
+    max-width: 300px;
     padding: 2rem 20px;
     height: 1000px;
     overflow: auto;
+}
+
+.top-companies::-webkit-scrollbar {
+    /* Hide scrollbar for Chrome, Safari, and newer Edge */
+    display: none;
+    
+    /* Hide scrollbar for Firefox */
+    scrollbar-width: none;
+
+    /* Hide scrollbar for IE and older Edge */
+    -ms-overflow-style: none;
 }
 
 .jsc-header {
@@ -228,8 +240,8 @@ article.about-dez > div.article-header {
     text-align: center;
     margin: 2rem 0;
     padding: 1rem;
-    border-bottom: 2px solid rgb(200, 200, 200);
-    border-top: 2px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(220, 220, 220);
+    border-top: 1px solid rgb(220, 220, 220);
 }
 #webdev {
     margin: 0 0 1.5rem 0;
@@ -320,6 +332,7 @@ h4 {
 }
 .tc-card > .header-img > img {
     width: 100%;
+    height: auto;
     margin: auto;
     border-radius: 8px;
 }
@@ -334,6 +347,7 @@ h4 {
         margin: auto;
     }
     .top-companies {
+        max-width: none;
         width: 100%;
         height: fit-content;
         margin: auto;

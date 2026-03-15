@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="160" viewBox="0 0 420 160" role="img" aria-label="Apex Labs">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="420" height="160" rx="24" fill="#0b1220"/>
+  <circle cx="76" cy="80" r="40" fill="url(#g)" opacity="0.95"/>
+  <path d="M60 92l16-36 16 36h-9l-7-16-7 16h-9z" fill="#0b1220"/>
+  <text x="140" y="86" fill="#e5e7eb" font-family="Google Sans, Roboto, Arial, sans-serif" font-size="40" font-weight="700" letter-spacing="0.5">Apex</text>
+  <text x="140" y="116" fill="#93c5fd" font-family="Google Sans, Roboto, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="2">LABS</text>
+</svg>

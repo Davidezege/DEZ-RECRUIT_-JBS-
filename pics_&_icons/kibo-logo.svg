@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="160" viewBox="0 0 420 160" role="img" aria-label="Kibo Studio">
+  <defs>
+    <linearGradient id="kg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="420" height="160" rx="24" fill="#0b0c1a"/>
+  <rect x="44" y="42" width="84" height="84" rx="18" fill="url(#kg)" opacity="0.95"/>
+  <path d="M70 108V58h12v20l18-20h15L94 81l23 27H101L82 86v22H70z" fill="#0b0c1a"/>
+  <text x="160" y="90" fill="#f5f3ff" font-family="Google Sans, Roboto, Arial, sans-serif" font-size="40" font-weight="800">Kibo</text>
+  <text x="160" y="118" fill="#67e8f9" font-family="Google Sans, Roboto, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="2">STUDIO</text>
+</svg>
